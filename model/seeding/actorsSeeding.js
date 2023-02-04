@@ -1,0 +1,54 @@
+let actorsInit = `
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Harrison Ford', 4871.70, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Samuel L. Jackson', 4772.80, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Morgan Freeman', 4468.30,${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Tom Hanks', 4340.80, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Robert Downey, Jr.', 3947.30, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Eddie Murphy', 3810.40, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Tom Cruise', 3587.20, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Johnny Depp', 3368.60, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Michael Caine', 3351.50, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Scarlett Johansson', 3341.20, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Gary Oldman', 3294.00, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Robin Williams', 3279.30, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Bruce Willis', 3189.40, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Stellan Skarsgard', 3175.00, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Anthony Daniels', 3162.90, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Ian McKellen', 3150.40, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Will Smith', 3149.10, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Stanley Tucci', 3123.90, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Matt Damon', 3107.30, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Robert DeNiro', 3081.30, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Cameron Diaz', 3031.70, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Liam Neeson', 2942.70, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Andy Serkis', 2890.60, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Don Cheadle', 2885.40,${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Ben Stiller', 2827.00, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Helena Bonham Carter', 2822.00, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Orlando Bloom', 2815.80, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Woody Harrelson', 2815.80, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Cate Blanchett', 2802.60, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Julia Roberts', 2735.30, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Elizabeth Banks', 2726.30, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Ralph Fiennes', 2715.30, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Emma Watson', 2681.90, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Tommy Lee Jones', 2681.30, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Brad Pitt', 2680.90, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Adam Sandler', 2661.00, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Daniel Radcliffe', 2634.40, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Jonah Hill', 2605.10, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Owen Wilson', 2602.30, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Idris Elba', 2580.60, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Bradley Cooper', 2557.70, ${Math.ceil(Math.random() * 20)}); 
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Mark Wahlberg', 2549.80, ${Math.ceil(Math.random() * 20)}); 
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Jim Carrey', 2545.20, ${Math.ceil(Math.random() * 20)}); 
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Dustin Hoffman', 2522.10, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Leonardo DiCaprio', 2518.30, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Jeremy Renner', 2500.30, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Philip Seymour Hoffman', 2463.70, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Sandra Bullock', 2462.60,${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Chris Evans', 2457.80, ${Math.ceil(Math.random() * 20)});
+INSERT INTO "Actors"(actor, total_gross, movie_id) VALUES('Anne Hathaway', 2416.50, ${Math.ceil(Math.random() * 20)});
+`
+
+module.exports = { actorsInit }

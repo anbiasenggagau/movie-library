@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  movielibrary:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
+    env_file:
+      - ./.env
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres
+    restart: always
+    env_file:
+      - ./.env
+
+# docker-compose -f docker-compose.yml up -d --build
+# docker-compose -f docker-compose.yml down -v

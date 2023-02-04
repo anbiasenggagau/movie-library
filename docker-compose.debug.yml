@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  movielibrary:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3000:3000
+    volumes:
+      - ./index.js:/app/index.js
+      - ./package.json/:/app/package.json
+      - ./model/:/app/model
+      - ./Controller/:/app/Controller
+      - ./config/:/app/config
+    env_file:
+      - ./.env
+    depends_on:
+      - postgres
+    command: npm run dev
+
+  postgres:
+    image: postgres
+    restart: always
+    env_file:
+      - ./.env
+
+# docker-compose -f docker-compose.debug.yml up -d --build
+# docker-compose -f docker-compose.debug.yml down -v
