@@ -23,6 +23,7 @@ npm run start
 ```
 
 Before head down to [Movie-Library](localhost:3000/graphiql) to write your query, you must authenticate first in order to access the app, I've provided a dummy data with details below:
+
 `
 username = anbiasenggagau
 `
@@ -51,6 +52,7 @@ After setting up all the environment variables, on command prompt, you can execu
 docker-compose -f docker-compose.yml up -d --build
 ```
 Before head down to [Movie-Library](localhost:3000/graphiql) to write your query, you must authenticate first in order to access the app, I've provided a dummy data with details below:
+
 `
 username = anbiasenggagau
 `
