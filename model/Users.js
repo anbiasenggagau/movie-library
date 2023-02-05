@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize')
 const postgres = require('./connection')
 
-const Users = postgres.define('User', {
+const User = postgres.define('User', {
     id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
@@ -14,9 +14,12 @@ const Users = postgres.define('User', {
     username: {
         type: DataTypes.STRING,
         allowNull: false
+    },
+    password: {
+        type: DataTypes.STRING,
+        allowNull: false
     }
 }, {
 })
 
-
-module.exports = { Users }
+module.exports = { User }
